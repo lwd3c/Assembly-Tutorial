@@ -102,6 +102,7 @@
 ### 3. NEG 
 - Đảo ngược dấu của toán hạng. Toán hạng có thể là thanh ghi hoặc bộ nhớ.
 - Bất kì toán hạng nào khác 0 đều khiến Carry flag được thiết lập.
+  
 ![alt text](/Chapter-4/images/image.png)
 
 ### 4. Thực hiện biểu thức số học.
@@ -233,7 +234,7 @@
     Logic:   	ECX <- ECX -1 
     If ECX != 0, jump to target
     ```
-    
+
 - Trình biên dịch tính khoảng cách bằng byte giữa offset của the following instruction và offset của target label. Được gọi là offset tương đối, được thêm vào EIP.
     > VD:
     > 
