@@ -31,11 +31,11 @@ Procedures (các thủ tục): là các khối mã lệnh được xác định 
 
 ### 2. PUSH
  
-![alt text](/Chapter%205/image.png)
+![alt text](/Chapter-5/images/image.png)
 
 ### 3. POP
 
-![alt text](/Chapter%205/image-1.png) 
+![alt text](/Chapter-5/images/image-1.png) 
 
 ### 4. Hướng dẫn liên quan
 
@@ -59,7 +59,9 @@ Procedures (các thủ tục): là các khối mã lệnh được xác định 
 
 - 1 thủ tục tốt có thể được sử dụng ở nhiều chương trình nếu nó không để cập đến tên biến cụ thể.
 - Tham số giúp cho thủ tục linh hoạt bởi giá trị của tham số có thể thay đổi trong quá trình chạy.
-	> ![alt text](/Chapter%205/image-2.png)
+- 
+	> ![alt text](/Chapter-5/images/image-2.png)
+
 ### 3. USES
 
 - USES: tự động lưu và khôi phục các thanh ghi được liệt kê khi vào và ra khỏi 1 thủ tục.
@@ -87,7 +89,7 @@ Procedures (các thủ tục): là các khối mã lệnh được xác định 
 
 - Để gọi các thủ tục từ thư viện Irvine32, dùng INCLUDE để bao gồm các khai báo của các thủ tục và dung CALL để gọi các thủ tục này.
 
-	> ![alt text](/Chapter%205/image-3.png)
+	> ![alt text](/Chapter-5/images/image-3.png)
 
 ### Tổng quát các thủ tục:
 > **CloseFile**: đóng 1 tệp đĩa đang mở.
@@ -194,9 +196,9 @@ Procedures (các thủ tục): là các khối mã lệnh được xác định 
 	+ Kiểm tra các thủ tục riêng biệt.
 - Ví dụ:
 
-	![alt text](/Chapter%205/image-4.png)
+	![alt text](/Chapter-5/images/image-4.png)
 	
-	![alt text](/Chapter%205/image-5.png)
+	![alt text](/Chapter-5/images/image-5.png)
  
 ## VI. 64-Bit Assembly Programming
 

@@ -96,11 +96,11 @@
 ### 3. NEG 
 - Đảo ngược dấu của toán hạng. Toán hạng có thể là thanh ghi hoặc bộ nhớ.
 - Bất kì toán hạng nào khác 0 đều khiến Carry flag được thiết lập.
-![alt text](/images/image.png)
+![alt text](/Chapter-4/images/image.png)
 
 ### 4. Thực hiện biểu thức số học.
 
-![alt text](/images/image-1.png)
+![alt text](/Chapter-4/images/image-1.png)
 
 ### 5. Cờ bị ảnh hưởng bởi số học.
 
@@ -112,7 +112,7 @@
 	- Carry flag (CF) – thiết lập = 1 khi kết quả phép tính unsigned làm tràn qua giới hạn 1 thanh ghi.
 	- Overflow flag (OF) – thiết lập = 1 khi kết quả phép tính signed làm tràn qua giới hạn 1 thanh ghi. 
 
-![alt text](/images/image-2.png)
+![alt text](/Chapter-4/images/image-2.png)
 
 ### 6. Số nguyên có dấu và không dấu.
 
@@ -128,11 +128,11 @@
 
 - OFFSET trả về khoảng cách tính bằng byte từ 1 label đến đầu của đoạn chứa nhãn đó.
 - 
-  > ![alt text](/images/image-3.png)
+  > ![alt text](/Chapter-4/images/image-3.png)
 
 - Giá trị trả về bởi OFFSET là 1 con trỏ.
   
-  > ![alt text](/images/image-4.png)
+  > ![alt text](/Chapter-4/images/image-4.png)
 
 -  ALIGN: căn chỉnh 1 biến hoặc dữ liệu trên 1 ranh giới byte, word, dword hoặc paragraph.
   
@@ -145,29 +145,29 @@
 - Khi số nguyên được tải từ bộ nhớ vào thanh ghi, các byte được tự động đảo ngược lại theo đúng vị trí.
 - PTR cũng được dùng để kết hợp các phần tử của kiểu dữ liệu nhỏ hơn và chuyển chúng tới toán hạng lớn hơn. CPU sẽ tự động đảo ngược các byte.
 
-    > ![alt text](/images/image-5.png)
+    > ![alt text](/Chapter-4/images/image-5.png)
 
 ### 3. TYPE
 
 - TYPE trả về kích thước bằng byte của 1 phần tử khai báo dữ liệu.
  
-    > ![alt text](/images/image-6.png)
+    > ![alt text](/Chapter-4/images/image-6.png)
 
 ### 4. LENGTHOF
 
 - LENGTHOF đếm số lượng phần tử trong 1 khai báo dữ liệu.
 
-    > ![alt text](/images/image-7.png)
+    > ![alt text](/Chapter-4/images/image-7.png)
 
 ### 5. SIZEOF
 
 - SIZEOF trả về giá trị (LENGTHOF * TYPE).
  
-    >![alt text](/images/image-8.png)
+    >![alt text](/Chapter-4/images/image-8.png)
 
 - **Trải dài nhiều dòng**: Khai báo dữ liệu trải dài trên nhiều dòng nếu mỗi dòng (trừ dòng cuối cùng) kết thúc bằng dấu phẩy. LENGTHOR và SIZEOF bao gồm tất cả các dòng thuộc khai báo.
  
-    > ![alt text](/images/image-9.png)
+    > ![alt text](/Chapter-4/images/image-9.png)
 
 ### 6. LABEL
 
@@ -175,7 +175,7 @@
 - LABEL không cấp phát bộ nhớ cho riêng nó.
 - Loại bỏ sự cần thiết của PTR trong 1 số trường hợp.
  
-    > ![alt text](/images/image-10.png)
+    > ![alt text](/Chapter-4/images/image-10.png)
 
 ## IV. Địa chỉ gián tiếp
 
@@ -183,13 +183,13 @@
 
 - 1 toán hạng gián tiếp chứa địa chỉ của 1 biến, thường là 1 mảng hoặc chuỗi. Nó có thể được giải mã như con trỏ.
 
-    > ![alt text](/images/image-11.png)
+    > ![alt text](/Chapter-4/images/image-11.png)
 
 - Sử dụng PTR để làm rõ kích thước của toán hạng bộ nhớ.
   
 ### 2. Ví dụ tính tổng 1 mảng.
 
-> ![alt text](/images/image-12.png)
+> ![alt text](/Chapter-4/images/image-12.png)
 
 ### 3. Toán hạng có chỉ mục.
 
@@ -198,16 +198,16 @@
     >
     > Label[Reg]
 
-    > ![alt text](/images/image-13.png)
+    > ![alt text](/Chapter-4/images/image-13.png)
 
 - **Chia tỉ lệ chỉ mục**: bạn có thể chia tỷ lệ 1 toán hạng gián tiếp hoặc toán hạng được lập chỉ mục theo offset của phần tử mảng. Thực hiện bằng cách nhân chỉ mục với TYPE của mảng.
 
-    > ![alt text](/images/image-14.png)
+    > ![alt text](/Chapter-4/images/image-14.png)
 
 ### 4. Con trỏ.
 - Bạn có thể khai báo 1 biến con trỏ chứa offset của 1 biến khác.
   
-    > ![alt text](/images/image-15.png)
+    > ![alt text](/Chapter-4/images/image-15.png)
 
 ## V. JMP và LOOP
 
@@ -229,18 +229,18 @@
 - Trình biên dịch tính khoảng cách bằng byte giữa offset của the following instruction và offset của target label. Được gọi là offset tương đối, được thêm vào EIP.
     > VD:
     > 
-    > ![alt text](/images/image-16.png)
+    > ![alt text](/Chapter-4/images/image-16.png)
 - Vòng lặp lồng nhau: nếu bạn cần code 1 vòng lặp trong 1 vòng lặp, bạn phải lưu giá trị ECX của vòng lặp ngoài.
  
-    > ![alt text](/images/image-17.png)
+    > ![alt text](/Chapter-4/images/image-17.png)
 
 ### 3. Tính tổng 1 mảng số nguyên.
 
-> ![alt text](/images/image-18.png)
+> ![alt text](/Chapter-4/images/image-18.png)
 
 ### 4. Sao chép 1 chuỗi.
 
-> ![alt text](/images/image-19.png)
+> ![alt text](/Chapter-4/images/image-19.png)
 
 ## VI. 64-Bit Programming
 
