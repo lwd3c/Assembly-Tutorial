@@ -40,17 +40,20 @@
 ### 1. Các loại toán hạng
 
 - Giá trị tức thời (hằng số): là các số nguyên không đổi (8, 16 hoặc 32bits) được mã hóa trong lệnh.
-    > Vd: 10, 0x1A, 1234h, …
+  
+    Vd: 10, 0x1A, 1234h, …
 - Thanh ghi: tên của thanh ghi được chuyển thành số và mã hóa trong lệnh.
-	> Vd: AH, AL, AX , BX, SI, DI, EAX, EBX, ESI, ESP, … 
+  
+    Vd: AH, AL, AX , BX, SI, DI, EAX, EBX, ESI, ESP, … 
 - Địa chỉ bộ nhớ: tham chiếu tới 1 vị trí trong bộ nhớ, địa chỉ bộ nhớ được mã hóa trong lệnh hoặc 1 thanh ghi.
-	> Vd: [1234h], [BX], [BX + SI], [CS:1234H], …
+  
+    Vd: [1234h], [BX], [BX + SI], [CS:1234H], …
 
 ### 2. Toán hạng bộ nhớ trực tiếp
 
 - 1 toán hạng bộ nhớ trực tiếp là 1 tham chiếu có tên (Label) tới vùng lưu trữ trong bộ nhớ.
 - Label được tự động giải mã thành địa chỉ cụ thể bởi trình biên dịch.
-- 
+  
 ### 3. Lệnh MOV
 
 - Di chuyển dữ liệu từ nguồn(source) tới đích(destination).
