@@ -92,6 +92,7 @@ Procedures (các thủ tục): là các khối mã lệnh được xác định 
 	> ![alt text](/Chapter-5/images/image-3.png)
 
 ### Tổng quát các thủ tục:
+
 > **CloseFile**: đóng 1 tệp đĩa đang mở.
 >
 > **Clrscr**: xóa màn hình console và đặt con trỏ về góc trên bên trái.

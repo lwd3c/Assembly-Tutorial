@@ -40,14 +40,11 @@
 ### 1. Các loại toán hạng
 
 - Giá trị tức thời (hằng số): là các số nguyên không đổi (8, 16 hoặc 32bits) được mã hóa trong lệnh.
-  
-    Vd: 10, 0x1A, 1234h, …
+    > Vd: 10, 0x1A, 1234h, …
 - Thanh ghi: tên của thanh ghi được chuyển thành số và mã hóa trong lệnh.
-  
-    Vd: AH, AL, AX , BX, SI, DI, EAX, EBX, ESI, ESP, … 
+	> Vd: AH, AL, AX , BX, SI, DI, EAX, EBX, ESI, ESP, … 
 - Địa chỉ bộ nhớ: tham chiếu tới 1 vị trí trong bộ nhớ, địa chỉ bộ nhớ được mã hóa trong lệnh hoặc 1 thanh ghi.
-  
-    Vd: [1234h], [BX], [BX + SI], [CS:1234H], …
+	> Vd: [1234h], [BX], [BX + SI], [CS:1234H], …
 
 ### 2. Toán hạng bộ nhớ trực tiếp
 
@@ -57,11 +54,13 @@
 ### 3. Lệnh MOV
 
 - Di chuyển dữ liệu từ nguồn(source) tới đích(destination).
-	> MOV  destination, source
+	
+    ``` MOV  destination, source ```
+
 - CS, EIP, IP  và hằng số không thể là đích đến.
 - Không thể MOV trực tiếp tới thanh ghi phân đoạn(CS, DS,..)
 - Không thể MOV từ bộ nhớ tới bộ nhớ. 
-- 
+  
 ### 4. Zero Extension
 
 - Khi copy 1 giá trị nhỏ hơn vào 1 đích lớn hơn, lệnh MOVZX sẽ lấp đầy nửa trên của đích bằng số 0.
@@ -77,25 +76,29 @@
 ### 6. XCHG 
 
 - XCHG hoán đổi giá trị của 2 toán hạng. Ít nhất 1 toán hạng là 1 thanh ghi. Không thể là hằng số.
-    > Vd: xchg ax, bx
+    > Vd: XCHF AX, BX
 
 ## II. Addition  and Subtraction
 
 ### 1. INC và DEC
 
  - INC: cộng thêm 1 vào toán hạng đích.
-    > INC des
+    
+    ```INC des```
 - DEC: trừ đi 1 ở toán hạng đích.
-    > DEC des
+  
+    ```DEC des```
 
 ### 2. ADD và SUB
 
 - ADD: cộng nguồn vào đích
-	> ADD destination, source
+  
+	```ADD destination, source```
 - SUB: trừ nguồn vào đích
-	> SUB destiantion, source
+  
+	```SUB destiantion, source```
 - Quy tắc giống MOV.
-- 
+  
 ### 3. NEG 
 - Đảo ngược dấu của toán hạng. Toán hạng có thể là thanh ghi hoặc bộ nhớ.
 - Bất kì toán hạng nào khác 0 đều khiến Carry flag được thiết lập.
@@ -130,7 +133,7 @@
 ### 1. OFFSET
 
 - OFFSET trả về khoảng cách tính bằng byte từ 1 label đến đầu của đoạn chứa nhãn đó.
-- 
+  
   > ![alt text](/Chapter-4/images/image-3.png)
 
 - Giá trị trả về bởi OFFSET là 1 con trỏ.
@@ -197,9 +200,9 @@
 ### 3. Toán hạng có chỉ mục.
 
 - Toán hạng có chỉ mục thêm 1 hằng số vào thanh ghi để tạo ra 1 địa chỉ hiệu quả. Gồm 2 kiểu:
-	> [Label + Reg]
-    >
-    > Label[Reg]
+	
+    ```[Label + Reg]```
+    ```Label[Reg]```
 
     > ![alt text](/Chapter-4/images/image-13.png)
 
@@ -217,18 +220,20 @@
 ### 1. JMP
 
 - JMP là nhảy không điều kiện tới nhãn mà thường nằm trong cùng 1 thủ tục. Khhi JMP thực thi, luồng điều khiển sẽ chuyển đến nhãn chỉ định mà không kiểm tra điều kiện nào.
-    > Cú pháp: JMP target
-    >
-    > Logic: EIP <- target
+    ```
+    Cú pháp: JMP target
+    Logic: EIP <- target
+    ```
 
 ### 2. LOOP
 
 - LOOP: tạo 1 vòng lặp.
-    > Cú pháp: LOOP target
-    >
-    > Logic:   	ECX <- ECX -1 
-    >
-    > If ECX != 0, jump to target
+    ```
+    Cú pháp: LOOP target
+    Logic:   	ECX <- ECX -1 
+    If ECX != 0, jump to target
+    ```
+    
 - Trình biên dịch tính khoảng cách bằng byte giữa offset của the following instruction và offset của target label. Được gọi là offset tương đối, được thêm vào EIP.
     > VD:
     > 
