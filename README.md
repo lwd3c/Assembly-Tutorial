@@ -7,6 +7,8 @@
 ### 3. Thêm file vào vùng chờ
     > git add .
 
+**Nếu chưa có branch `main`:** `git checkout -b main`
+    
 ### 4. Commit thay đổi
     > git commit -m "Thông điệp commit"
 
