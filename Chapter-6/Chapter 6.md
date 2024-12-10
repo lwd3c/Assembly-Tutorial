@@ -50,36 +50,36 @@
 - Để thực hiện AND mà không làm thay đổi giá trị của bất kì toán hạng nào và để kiểm tra điều kiện, ta sử dụng TEST.
 - TEST thực hiện AND 2 toán hạng nhưng không lưu kết quả, chỉ ảnh hưởng tới các cờ CPU.
   
-![alt text](/Chapter-6/image-5.png)
+![alt text](/Chapter-6/images/image-5.png)
  
 #### 7. CMP
 - So sánh đích với nguồn (thực hiện phép trừ nhưng đích không bị thay đổi).
 - Cú pháp: 	CMP des, sou
 - Ví dụ:
  
- ![alt text](/Chapter-6/image-6.png)
+ ![alt text](/Chapter-6/images/image-6.png)
   
-  ![alt text](/Chapter-6/image-7.png)
+  ![alt text](/Chapter-6/images/image-7.png)
 
 - Với số nguyên có dấu:
  
- ![alt text](/Chapter-6/image-8.png)
+ ![alt text](/Chapter-6/images/image-8.png)
 
 #### 8. Set và Clear Flags
  
- ![alt text](/Chapter-6/image-9.png)
+ ![alt text](/Chapter-6/images/image-9.png)
 
 ### II. Các lệnh nhảy có điều kiện
 - Lệnh nhảy có điều kiện: phân nhánh tới 1 label được chỉ định dựa trên trạng thái các thanh ghi hoặc các cờ trên CPU.
 - Cụ thể:
   
- ![alt text](/Chapter-6/image-10.png)
+ ![alt text](/Chapter-6/images/image-10.png)
  
- ![alt text](/Chapter-6/image-11.png)
+ ![alt text](/Chapter-6/images/image-11.png)
 
- ![alt text](/Chapter-6/image-12.png)
+ ![alt text](/Chapter-6/images/image-12.png)
 
- ![alt text](/Chapter-6/image-13.png)
+ ![alt text](/Chapter-6/images/image-13.png)
 
 ### III. Vòng lặp có điều kiện
 #### 1. LOOPZ và LOOPE
