@@ -74,24 +74,24 @@
 - Ở 32-bit, MUL (nhân không dấu) nhân toán hạng 8, 16 hoăc 32-bit với thanh ghi AL, AX, EAX. 
 - Cú pháp: 	MUL reg/mem(8, 16, 32)
  
-![alt text](image.png)
+![alt text](/Chapter-7/images/image.png)
 
 #### 2. IMUL
 - IMUL (nhân có dấu): nhân toán hạng 8, 16 hoăc 32-bit với thanh ghi AL, AX, EAX. 
 - Duy trì dấu của tích bằng cách mở rộng dấu vào nửa phần trên của des.
  
- ![alt text](image-1.png)
+ ![alt text](/Chapter-7/images/image-1.png)
 
 #### 3. DIV	
 - DIV (chia không dấu): thực hiện phép chia nguyên giữa các thanh ghi AX, DX:AX, EDX:EAX với 1 toán hạng, kết quả lưu vào thanh ghi tương ứng.
 - 1 toán hạng được cung cấp (reg/mem) được coi là số chia.
  
- ![alt text](image-2.png)
+ ![alt text](/Chapter-7/images/image-2.png)
 
 #### 4. Chia số nguyên có dấu
 - Số nguyên có dấu phải được mở rộng phần dấu trước khi chia: điền vào các byte,word,dw cao bằng 1 bản sao bit dấu của byte,word,dw thấp.
   
-  ![alt text](image-3.png)
+![alt text](/Chapter-7/images/image-3.png)
 
 #### 5. CBW, CWD, CDQ
 - Là các lệnh mở rộng dấu, dùng để chuyển đổi giá trị từ 8 lên 16 hoặc từ 16 lên 32, duy trì dấu trong quá trình mở rộng.
